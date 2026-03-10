@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajput Resort — Heritage Luxury in Udaipur</title>
+  <meta name="description" content="Experience royal Rajasthani hospitality at Rajput Resort, Udaipur. Heritage luxury rooms, traditional dining, spa, and curated heritage tours." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Favicon (inline SVG as data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23C8A96E'/><text x='32' y='44' text-anchor='middle' font-size='32' font-family='serif' fill='%23fff'>R</text></svg>" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║           NAVIGATION                 ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Rajput Resort — Home">
+        <img src="assets/images/logo.svg" alt="Rajput Resort Logo" width="200" height="50" />
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║           HERO SECTION               ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <header class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle animate-fade-up">Welcome to</p>
+      <h1 class="hero-title animate-fade-up" style="animation-delay: .15s">Rajput Resort</h1>
+      <div class="hero-divider animate-fade-up" style="animation-delay: .3s" aria-hidden="true">
+        <span class="divider-ornament">✦</span>
+      </div>
+      <p class="hero-tagline animate-fade-up" style="animation-delay: .4s">Where Heritage Meets Luxury</p>
+      <a href="#reservation" class="btn btn-primary hero-cta animate-fade-up" style="animation-delay: .55s">Reserve Your Stay</a>
+    </div>
+    <div class="scroll-indicator animate-fade-up" style="animation-delay: .8s" aria-hidden="true">
+      <span class="scroll-arrow"></span>
+    </div>
+  </header>
+
+  <!-- Heritage Border Divider -->
+  <div class="heritage-divider" aria-hidden="true">
+    <div class="divider-pattern"></div>
+  </div>
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║           ABOUT SECTION              ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Discover Our Story</p>
+        <h2 class="section-title">About Us</h2>
+        <div class="title-ornament" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image reveal reveal-left">
+          <div class="image-frame">
+            <img src="assets/images/about.jpg" alt="Rajput Resort heritage courtyard with traditional Rajasthani architecture" loading="lazy" />
+            <div class="image-frame-border" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="about-text reveal reveal-right">
+          <h3>A Legacy of Royal Hospitality</h3>
+          <p>Welcome to <strong>Rajput Resort</strong>, a heritage stay nestled in the heart of Udaipur — the City of Lakes. Our resort blends centuries-old Rajput tradition with modern luxury, offering guests an experience that echoes the grandeur of Mewar royalty.</p>
+          <p>Set against the backdrop of the Aravalli hills and overlooking the serene waters of Lake Pichola, every corner of our property tells a story of art, valor, and timeless elegance. From hand-carved jharokhas to sprawling courtyards adorned with fountains, Rajput Resort is more than a stay — it is a journey into Rajasthan's glorious past.</p>
+          <p>Whether you seek tranquil relaxation, culinary adventures in Rajasthani cuisine, or curated tours of Udaipur's legendary heritage sites, our dedicated staff ensures every moment is steeped in warmth and authenticity.</p>
+          <a href="#services" class="btn btn-outline">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage Border Divider -->
+  <div class="heritage-divider" aria-hidden="true">
+    <div class="divider-pattern"></div>
+  </div>
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║          SERVICES SECTION            ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">What We Offer</p>
+        <h2 class="section-title">Our Services</h2>
+        <div class="title-ornament" aria-hidden="true"></div>
+      </div>
+
+      <div class="services-grid">
+        <!-- Accommodation -->
+        <article class="service-card reveal" style="animation-delay: .1s">
+          <div class="card-image-wrapper">
+            <img src="assets/images/room.jpg" alt="Luxurious heritage room with traditional décor and modern amenities" loading="lazy" />
+            <div class="card-image-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="18" width="40" height="20" rx="2"/>
+                <path d="M4 28h40"/>
+                <path d="M12 18v-6a4 4 0 014-4h16a4 4 0 014 4v6"/>
+                <circle cx="16" cy="22" r="3"/>
+                <circle cx="32" cy="22" r="3"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Accommodation</h3>
+            <p>Indulge in our exquisitely appointed heritage suites, each adorned with hand-painted frescoes, antique furnishings, and panoramic views of the Aravalli hills or Lake Pichola.</p>
+          </div>
+        </article>
+
+        <!-- Dining -->
+        <article class="service-card reveal" style="animation-delay: .2s">
+          <div class="card-image-wrapper">
+            <img src="assets/images/dining.jpg" alt="Traditional Rajasthani thali with rich, colorful dishes" loading="lazy" />
+            <div class="card-image-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="24" cy="34" rx="18" ry="6"/>
+                <path d="M6 34c0-14 8-26 18-26s18 12 18 26"/>
+                <path d="M24 8v8"/>
+                <path d="M18 10c2 3 4 5 6 6"/>
+                <path d="M30 10c-2 3-4 5-6 6"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Dining</h3>
+            <p>Savor authentic Rajasthani cuisine — from the fiery Laal Maas to delicate Dal Baati Churma — prepared by master chefs using recipes passed down through generations of royal kitchens.</p>
+          </div>
+        </article>
+
+        <!-- Spa & Wellness -->
+        <article class="service-card reveal" style="animation-delay: .3s">
+          <div class="card-image-wrapper">
+            <img src="assets/images/spa.jpg" alt="Serene spa setting with aromatic oils and relaxation treatment" loading="lazy" />
+            <div class="card-image-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M24 40c-8 0-14-6-14-14 0-6 4-12 14-20 10 8 14 14 14 20 0 8-6 14-14 14z"/>
+                <path d="M24 20v16"/>
+                <path d="M18 28c3-2 6-2 6 0s3 2 6 0"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Spa &amp; Wellness</h3>
+            <p>Rejuvenate your senses with traditional Ayurvedic therapies, aromatic oil massages, and yoga sessions in our tranquil spa pavilion, set amidst fragrant jasmine gardens.</p>
+          </div>
+        </article>
+
+        <!-- Local Tours -->
+        <article class="service-card reveal" style="animation-delay: .4s">
+          <div class="card-image-wrapper">
+            <img src="assets/images/tour.jpg" alt="Majestic Udaipur heritage architecture and ancient palace" loading="lazy" />
+            <div class="card-image-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 40V12l14-8 14 8v28"/>
+                <path d="M8 12l14 8 14-8"/>
+                <rect x="18" y="26" width="8" height="14" rx="1"/>
+                <path d="M22 20v2"/>
+                <path d="M14 18v2"/>
+                <path d="M30 18v2"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Local Tours</h3>
+            <p>Explore Udaipur's magnificent heritage — the City Palace, Jag Mandir, Saheliyon-ki-Bari, and sunset boat rides on Lake Pichola — with our expert local guides.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage Border Divider -->
+  <div class="heritage-divider" aria-hidden="true">
+    <div class="divider-pattern"></div>
+  </div>
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║        RESERVATION SECTION           ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <section class="section reservation" id="reservation">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Plan Your Visit</p>
+        <h2 class="section-title">Reserve Your Stay</h2>
+        <div class="title-ornament" aria-hidden="true"></div>
+      </div>
+
+      <div class="reservation-wrapper reveal">
+        <form
+          name="reservation"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="reservation-form"
+          id="reservationForm"
+          novalidate
+        >
+          <!-- Netlify honeypot (hidden) -->
+          <p class="hidden" aria-hidden="true">
+            <label>Don't fill this out: <input name="bot-field" /></label>
+          </p>
+
+          <div class="form-grid">
+            <!-- Name -->
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+              <span class="error-msg" id="nameError"></span>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+              <span class="error-msg" id="emailError"></span>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel" />
+              <span class="error-msg" id="phoneError"></span>
+            </div>
+
+            <!-- Guests -->
+            <div class="form-group">
+              <label for="guests">Number of Guests <span class="required">*</span></label>
+              <select id="guests" name="guests" required>
+                <option value="" disabled selected>Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6+">6+ Guests</option>
+              </select>
+              <span class="error-msg" id="guestsError"></span>
+            </div>
+
+            <!-- Check-in -->
+            <div class="form-group">
+              <label for="checkin">Check-in Date <span class="required">*</span></label>
+              <input type="date" id="checkin" name="checkin" required />
+              <span class="error-msg" id="checkinError"></span>
+            </div>
+
+            <!-- Check-out -->
+            <div class="form-group">
+              <label for="checkout">Check-out Date <span class="required">*</span></label>
+              <input type="date" id="checkout" name="checkout" required />
+              <span class="error-msg" id="checkoutError"></span>
+            </div>
+
+            <!-- Message (full width) -->
+            <div class="form-group form-group-full">
+              <label for="message">Special Requests</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about any special requirements or preferences…"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span>Send Reservation</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Success message (hidden by default) -->
+        <div class="form-success" id="formSuccess" aria-live="polite">
+          <div class="success-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3">
+              <circle cx="24" cy="24" r="20"/>
+              <path d="M14 24l7 7 13-13"/>
+            </svg>
+          </div>
+          <h3>Reservation Request Sent!</h3>
+          <p>Thank you for choosing Rajput Resort. We will confirm your booking within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage Border Divider -->
+  <div class="heritage-divider" aria-hidden="true">
+    <div class="divider-pattern"></div>
+  </div>
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║          CONTACT SECTION             ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Get In Touch</p>
+        <h2 class="section-title">Contact Us</h2>
+        <div class="title-ornament" aria-hidden="true"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal reveal-left">
+          <!-- Address -->
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Address</h4>
+              <p>Rajput Resort, Lake Palace Road,<br/>Near Fateh Sagar Lake,<br/>Udaipur, Rajasthan 313001, India</p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+              <p><a href="tel:+912942430000">+91 294 243 0000</a></p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 4L12 13 2 4"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:reservations@rajputresort.com">reservations@rajputresort.com</a></p>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links" aria-label="Social media">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="contact-map reveal reveal-right">
+          <iframe
+            title="Rajput Resort location on Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.073!2d73.6833!3d24.5833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM1JzAwLjAiTiA3M8KwNDEnMDAuMCJF!5e0!3m2!1sen!2sin!4v1700000000000"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║             FOOTER                   ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <footer class="footer">
+    <div class="footer-top-border" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.svg" alt="Rajput Resort Logo" width="180" height="45" />
+          <p>A heritage luxury resort in the heart of Udaipur, offering royal Rajasthani hospitality since generations.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reservation">Reservations</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-legal">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#" id="openTerms">Terms &amp; Conditions</a></li>
+            <li><a href="#" id="openPrivacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rajput Resort, Udaipur. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║         TERMS & CONDITIONS MODAL     ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <div class="modal-overlay" id="termsModal" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close Terms & Conditions">&times;</button>
+      <h2 id="termsTitle">Terms &amp; Conditions</h2>
+      <div class="modal-body">
+        <p><strong>Last updated:</strong> February 2026</p>
+
+        <h4>1. Reservation &amp; Booking</h4>
+        <p>All reservations are subject to availability. A confirmed booking requires a valid email and phone number. Rajput Resort reserves the right to cancel bookings that cannot be verified.</p>
+
+        <h4>2. Check-in / Check-out</h4>
+        <p>Standard check-in time is 2:00 PM and check-out is 11:00 AM. Early check-in and late check-out are subject to availability and may incur additional charges.</p>
+
+        <h4>3. Cancellation Policy</h4>
+        <p>Cancellations made at least 48 hours prior to the check-in date will receive a full refund. Cancellations within 48 hours of check-in will be charged one night's tariff.</p>
+
+        <h4>4. Guest Conduct</h4>
+        <p>Guests are expected to maintain decorum and respect the heritage property. Any damage to the property will be charged to the guest. Smoking is permitted only in designated areas.</p>
+
+        <h4>5. Liability</h4>
+        <p>Rajput Resort is not responsible for loss or damage to personal belongings. Guests are advised to use the in-room safe for valuables. The resort is not liable for injuries resulting from the misuse of facilities.</p>
+
+        <h4>6. Changes to Terms</h4>
+        <p>Rajput Resort reserves the right to update these terms at any time. Guests will be notified of significant changes via email.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║         PRIVACY POLICY MODAL         ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <div class="modal-overlay" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close Privacy Policy">&times;</button>
+      <h2 id="privacyTitle">Privacy Policy</h2>
+      <div class="modal-body">
+        <p><strong>Last updated:</strong> February 2026</p>
+
+        <h4>1. Information We Collect</h4>
+        <p>We collect personal information you voluntarily provide when making a reservation, including your name, email address, phone number, and stay preferences.</p>
+
+        <h4>2. How We Use Your Information</h4>
+        <p>Your information is used solely to process reservations, communicate booking confirmations, and improve your experience at Rajput Resort. We do not sell or share your data with third parties for marketing purposes.</p>
+
+        <h4>3. Data Security</h4>
+        <p>We implement industry-standard security measures to protect your personal information. However, no method of transmission over the Internet is 100% secure.</p>
+
+        <h4>4. Cookies</h4>
+        <p>Our website may use cookies to enhance user experience. You can disable cookies in your browser settings, though some features may not function as intended.</p>
+
+        <h4>5. Your Rights</h4>
+        <p>You have the right to access, modify, or delete your personal data at any time by contacting us at <a href="mailto:reservations@rajputresort.com">reservations@rajputresort.com</a>.</p>
+
+        <h4>6. Contact</h4>
+        <p>For any privacy-related inquiries, please reach out to our data protection team at the email address above.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
