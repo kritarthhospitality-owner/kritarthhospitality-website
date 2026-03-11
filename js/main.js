@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   RAJPUT RESORT — Main JavaScript
+   KRITARTH HOSPITALITY — Main JavaScript
    Features:
      • Navbar scroll effect (transparent → solid)
      • Smooth scroll for anchor links
