@@ -21,6 +21,7 @@
   const heroBg       = document.querySelector('.hero-bg');
   const form         = document.getElementById('reservationForm');
   const formSuccess  = document.getElementById('formSuccess');
+  const submitButton = form ? form.querySelector('.btn-submit') : null;
   const termsModal   = document.getElementById('termsModal');
   const privacyModal = document.getElementById('privacyModal');
   const openTerms    = document.getElementById('openTerms');
@@ -222,23 +223,38 @@
     },
   };
 
+  const checkinEl = document.getElementById('checkin');
+  const checkoutEl = document.getElementById('checkout');
+
+  function updateCheckoutMinDate() {
+    if (!checkinEl || !checkoutEl) return;
+
+    const today = new Date().toISOString().split('T')[0];
+    const minCheckout = checkinEl.value
+      ? (() => {
+          const nextDay = new Date(checkinEl.value);
+          nextDay.setDate(nextDay.getDate() + 1);
+          return nextDay.toISOString().split('T')[0];
+        })()
+      : today;
+
+    checkoutEl.setAttribute('min', minCheckout);
+  }
+
   // Set minimum date for date inputs
   function setMinDates() {
     const today = new Date().toISOString().split('T')[0];
-    const checkinEl = document.getElementById('checkin');
-    const checkoutEl = document.getElementById('checkout');
+
+    if (!checkinEl || !checkoutEl) return;
 
     checkinEl.setAttribute('min', today);
-    checkoutEl.setAttribute('min', today);
-
-    checkinEl.addEventListener('change', () => {
-      if (checkinEl.value) {
-        const nextDay = new Date(checkinEl.value);
-        nextDay.setDate(nextDay.getDate() + 1);
-        checkoutEl.setAttribute('min', nextDay.toISOString().split('T')[0]);
-      }
-    });
+    updateCheckoutMinDate();
   }
+
+  if (checkinEl) {
+    checkinEl.addEventListener('change', updateCheckoutMinDate);
+  }
+
   setMinDates();
 
   // Real-time validation on blur
@@ -261,9 +277,21 @@
     }
   });
 
+  function encodeFormData(formData) {
+    return new URLSearchParams(formData).toString();
+  }
+
+  function setSubmittingState(isSubmitting) {
+    if (!submitButton) return;
+    submitButton.disabled = isSubmitting;
+    submitButton.setAttribute('aria-busy', String(isSubmitting));
+  }
+
   // Form submit
   if (form) {
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
       let hasErrors = false;
 
       // Validate all fields
@@ -277,19 +305,33 @@
       });
 
       if (hasErrors) {
-        e.preventDefault();
         // Focus first invalid field
         const firstInvalid = form.querySelector('.invalid');
         if (firstInvalid) firstInvalid.focus();
         return;
       }
 
-      // If on Netlify, the form will naturally submit via POST.
-      // For local development, intercept and show success message.
-      const isNetlify = window.location.hostname.includes('netlify');
-      if (!isNetlify) {
-        e.preventDefault();
+      try {
+        setSubmittingState(true);
+
+        const formData = new FormData(form);
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encodeFormData(formData),
+        });
+
+        if (!response.ok) {
+          throw new Error(`Netlify form submission failed with status ${response.status}`);
+        }
+
+        form.reset();
+        setMinDates();
         showFormSuccess();
+      } catch (error) {
+        window.alert('Unable to send your reservation right now. Please try again in a moment.');
+      } finally {
+        setSubmittingState(false);
       }
     });
   }

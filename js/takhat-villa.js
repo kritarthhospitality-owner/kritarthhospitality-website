@@ -10,7 +10,7 @@
      • Active nav link highlighting
    ═══════════════════════════════════════════════════════════ */
 
-;(function () {
+(function () {
   'use strict';
 
   // ── DOM References ──
